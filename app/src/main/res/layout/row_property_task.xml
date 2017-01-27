@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_row_listing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:src="@drawable/layout_bg_bottomborder">
+
+    <ImageView
+        android:id="@+id/property_image"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/template_icon_"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/wrap_btn_rounded_corner_tg_like"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/title_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/property_image"
+        android:layout_toRightOf="@+id/property_image"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="@color/bs_blue"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/messgae_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_row"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/property_image"
+        android:layout_toRightOf="@+id/property_image"
+        android:ellipsize="end"
+        android:maxLength="30"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/messgae_row"
+        android:layout_alignLeft="@+id/messgae_row"
+        android:layout_alignStart="@+id/messgae_row" />
+
+</RelativeLayout>

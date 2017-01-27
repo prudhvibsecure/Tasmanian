@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addbus_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-light"
+                android:hint="Contact Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/textGray"
+                android:textColor="@android:color/black"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/addbus_cont_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-light"
+                android:hint="Email Address"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/textGray"
+                android:textColor="@android:color/black"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/addbus_cont_phn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-light"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColorHint="@color/textGray"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/addbus_cont_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-light"
+                android:hint="Website"
+                android:inputType="text"
+                android:textColorHint="@color/textGray"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/add_bus_next_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/template_bt_red_bg"
+                android:padding="15dp"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

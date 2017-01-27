@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_row_listing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:elevation="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/template_icon_"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/wrap_btn_rounded_corner_tg_like"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/template_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/product_image"
+        android:layout_toRightOf="@+id/product_image"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/template_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/template_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/product_image"
+        android:layout_toRightOf="@+id/product_image"
+        android:ellipsize="end"
+        android:maxLength="30"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/template_coutry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/template_title"
+        android:layout_alignLeft="@+id/template_title"
+        android:layout_alignStart="@+id/template_title" />
+
+    <TextView
+        android:id="@+id/date_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/template_coutry"
+        android:layout_alignLeft="@+id/template_coutry"
+        android:layout_alignStart="@+id/template_coutry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image"
+        android:minLines="2"
+        android:elevation="5dp"
+        android:padding="5dp"
+        android:textSize="14dp"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/c_name_desc" />
+</RelativeLayout>

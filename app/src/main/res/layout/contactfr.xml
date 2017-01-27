@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lets_contact" />
+
+                <TextView
+                    android:id="@+id/tv_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Reach out to us anytime and we'll\nhappily answer your questions."
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_head"
+                    android:gravity="center_horizontal"
+                    android:text="We're Here to Help !"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:drawableLeft="@android:drawable/sym_action_email"
+                android:drawablePadding="15dp"
+                android:drawableStart="@android:drawable/sym_action_email"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="25dp"
+                android:paddingTop="5dp"
+                android:text="info@tasmanian.properties"
+                android:textColor="@color/transparent_black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_mobiler_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="15dp"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:text="0406 565 422 (Office)"
+                android:textColor="@color/transparent_black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_mobiler_offic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="15dp"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:text="0466 068 777 (David)"
+                android:textColor="@color/transparent_black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_mobiler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="15dp"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:text="0467 069 035 (Alan)"
+                android:textColor="@color/transparent_black"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/transparent_black"
+                android:padding="5dp">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="25dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/transparent_black"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/transparent_black"
+                android:padding="5dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/facebook_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/facebook_circle" />
+                <ImageButton
+                    android:id="@+id/instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/instagram_online_social_media_photo" />
+                <ImageButton
+                    android:id="@+id/youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/youtube_circle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

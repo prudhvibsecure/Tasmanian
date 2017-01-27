@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/td_company_details">
+
+                    <ImageView
+                        android:id="@+id/comp_logo"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/cmts_bg"
+                        android:padding="10dp"
+                        android:scaleType="fitXY" />
+
+
+                    <TextView
+                        android:id="@+id/comp_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/comp_logo"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/template_bt_red_bg"
+                        android:drawableRight="@drawable/ic_star"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/comp_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/comp_rating"
+                        android:layout_margin="5dp"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textColor="#fff"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_views_pages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/comp_rating"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/comp_logo"
+                        android:layout_toRightOf="@+id/comp_logo"
+                        android:drawableLeft="@drawable/ic_looks"
+                        android:drawablePadding="1dp"
+                        android:padding="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/my_rows_social"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comp_address"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/comp_fb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_fb" />
+
+                        <ImageButton
+                            android:id="@+id/comp_twitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_twitter" />
+
+                        <ImageButton
+                            android:id="@+id/comp_gplus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_google" />
+
+                        <ImageButton
+                            android:id="@+id/comp_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@android:drawable/ic_dialog_email" />
+
+                        <ImageButton
+                            android:id="@+id/contact_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@android:drawable/sym_call_outgoing" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_below="@+id/my_rows_social">
+
+                    </View>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:shadowColor="@color/textGray"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comp_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_home_kms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/products_heading"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/products_tpk"
+                    android:fontFamily="Play"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:id="@+id/products_more_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/products_more"
+                        android:text="Available Products...!!!"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/products_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/textview_templete_back"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="More"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ListView
+                        android:id="@+id/products_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:layout_weight="1"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <TextView
+                        android:id="@+id/no_products"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:shadowDx="4"
+                        android:shadowDy="-4"
+                        android:shadowRadius="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/offer_heading"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/exclusive_offer_tpk"
+                    android:fontFamily="Play"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:id="@+id/offer_more_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/offer_more"
+                        android:text="Available Offers...!!!"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/offer_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/textview_templete_back"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="More"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ListView
+                        android:id="@+id/offers_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:layout_weight="1"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <TextView
+                        android:id="@+id/no_ex_offer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:shadowDx="4"
+                        android:shadowDy="-4"
+                        android:shadowRadius="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/rating_heading"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/reviews_tpk"
+                    android:fontFamily="Play"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:id="@+id/rating_more_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/rating_more"
+                        android:text="User Reviews...!!!"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/rating_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/textview_templete_back"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="More"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ListView
+                        android:id="@+id/ratings_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:layout_weight="1"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <TextView
+                        android:id="@+id/no_ratings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:shadowDx="4"
+                        android:shadowDy="-4"
+                        android:shadowRadius="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white">
+
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/comp_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_messge_review"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

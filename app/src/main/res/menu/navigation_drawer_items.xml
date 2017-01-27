@@ -1,0 +1,84 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/m_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/m_grden"
+            android:icon="@drawable/ic_gardan"
+            android:title="@string/geou" />
+        <item
+            android:id="@+id/m_legal"
+            android:icon="@drawable/ic_legal"
+            android:title="@string/legal" />
+        <item
+            android:id="@+id/m_finance"
+            android:icon="@drawable/ic_finance"
+            android:title="@string/finace" />
+
+        <item
+            android:id="@+id/m_trads"
+            android:icon="@drawable/ic_trades"
+            android:title="@string/trads" />
+
+        <item
+            android:id="@+id/m_intern"
+            android:icon="@drawable/ic_interior"
+            android:title="@string/idesin" />
+
+        <item
+            android:id="@+id/m_sustain"
+            android:icon="@drawable/ic_sustain"
+            android:title="@string/sustain" />
+
+        <item
+            android:id="@+id/m_disblityhm"
+            android:icon="@drawable/ic_diability"
+            android:title="@string/disblityhm" />
+        <item
+            android:id="@+id/m_prosup"
+            android:icon="@drawable/ic_products"
+            android:title="@string/prosup" />
+        <item
+            android:id="@+id/m_builds"
+            android:icon="@drawable/ic_builds"
+            android:title="@string/builds" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/m_luhlp"
+            android:icon="@drawable/ic_letushelp"
+            android:title="@string/luhlp" />
+        <item
+            android:id="@+id/m_newsl"
+            android:icon="@drawable/ic_news"
+            android:title="@string/newsl" />
+        <item
+            android:id="@+id/m_sponser"
+            android:icon="@drawable/ic_sponser"
+            android:title="@string/sponser" />
+        <item
+            android:id="@+id/m_adbus"
+            android:icon="@drawable/ic_addbusiness"
+            android:title="@string/adbus" />
+
+        <item
+            android:id="@+id/m_blog"
+            android:icon="@drawable/ic_cast_light"
+            android:title="@string/blog" />
+
+        <item
+            android:id="@+id/m_contact"
+            android:icon="@drawable/ic_phonenumber"
+            android:title="@string/contactus" />
+    </group>
+
+</menu>

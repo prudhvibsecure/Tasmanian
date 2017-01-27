@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/title_review"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Feedback"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:shadowDx="4"
+        android:padding="5dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:background="@color/bs_dark_mine"
+        android:shadowDy="-4"
+        android:shadowRadius="1"/>
+
+    <EditText
+        android:id="@+id/review_et"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title_review"
+        android:background="@drawable/cmts_bg"
+        android:gravity="top"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="Write Your Review Here..."
+        android:textColor="@color/black"
+        android:padding="5dp"/>
+    <RatingBar
+        android:id="@+id/dialog_rating_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/review_et"
+        android:numStars="5"
+        android:scaleX="0.7"
+        android:layout_gravity="left"
+        android:backgroundTint="@color/black"
+        android:scaleY="0.7"
+        android:rating="3.5"
+        android:stepSize="0.5" />
+
+
+    <TextView
+        android:id="@+id/dialog_rating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/template_bt_red_bg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:text="Submit"
+        android:layout_below="@+id/dialog_rating_rating_bar"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

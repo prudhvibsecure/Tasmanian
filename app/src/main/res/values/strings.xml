@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Tasmanian</string>
+    <string name="action_settings">Profile</string>
+    <string name="contactcon">If you would like to get in touch with Us. Please fill out form below.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Name</string>
+    <string name="email">Email Address</string>
+    <string name="message_text">Message</string>
+    <string name="sub_text">Categories</string>
+    <string name="title">Property Update</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="loading">Please Wait</string>
+
+
+    <string name="peyun">Please Enter Username</string>
+    <string name="pechars">Please Enter Characters Only</string>
+    <string name="peyln">Please Enter Your Last Name</string>
+
+    <string name="peei">Please Enter Email Address</string>
+    <string name="peavei">Please Enter Valid Email Address</string>
+    <string name="peavei1">Invalid Email Address</string>
+    <string name="psmbc">Password strength must be 8&#8211;16 characters</string>
+    <string name="peavccEi">Please enter a valid Cc Email Id</string>
+    <string name="subject">Please enter Your Subject</string>
+    <string name="messages">Enter Your Message</string>
+    <string name="pePswd">Please Enter Password</string>
+    <string name="pecPswd">Please enter confirm password</string>
+    <string name="peavPswd">Please enter a valid password</string>
+    <string name="pes">Please enter subject</string>
+    <string name="eiaceidrnc_old">Email ID and confirm Email ID is not correct</string>
+    <string name="eiaceidrnc">Email ID didn\'t match</string>
+    <string name="cpmm">Confirm password must match</string>
+    <string name="RateApp">Rate App</string>
+    <string name="shareapp">Share App</string>
+
+
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+
+    <string name="clr">Clear</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="pwait">Please Wait....</string>
+
+    <string name="erd_title">Rate this app</string>
+    <string name="erd_message">Hi, take a minute to rate this app and help support to improve more new features. ;)</string>
+    <string name="erd_no_thanks">No, thanks</string>
+    <string name="erd_remind_me_later">Remind me later</string>
+    <string name="erd_rate_now">Rate now</string>
+
+    <string name="pesk">Please enter search key</string>
+    <string name="isr">Invalid server response</string>
+    <string name="sct">Server connection timeout.!</string>
+    <string name="snr1">Server not reachable.!</string>
+    <string name="iurl">Invalid URL</string>
+    <string name="snr2">Server not reachable.!!</string>
+    <string name="snr3">Server not reachable.!!!</string>
+    <string name="nipcyns">No Internet, Please check your network settings</string>
+    <string name="cerr">Connection Error</string>
+    <string name="yhcdr">You have cancelled download request.</string>
+    <string name="isres">Invalid server response</string>
+    <string name="edcpda">Error, while downloading the content. Please download again</string>
+    <string name="ftu">Failed to upload.!!!</string>
+    <string name="yhctr">You have cancelled the request</string>
+
+    <string name="home">Home</string>
+    <string name="bub">Before you buy</string>
+    <string name="aub">After you bought</string>
+    <string name="geou">Garden and Outdoors</string>
+    <string name="legal">Legal</string>
+    <string name="finace">Finance</string>
+    <string name="trads">Trades</string>
+    <string name="idesin">Interior Design</string>
+    <string name="sustain">Sustainability</string>
+    <string name="disblityhm">Disability or Aged</string>
+    <string name="prosup">Products &amp; Suppliers</string>
+    <string name="builds">Building</string>
+    <string name="luhlp">Let Us Help You</string>
+    <string name="newsl">Newsletter</string>
+    <string name="sponser">Sponsors</string>
+    <string name="adbus">Add A Business</string>
+    <string name="blog">Blog</string>
+    <string name="contactus">Contact Us</string>
+    <string name="my_key">AIzaSyAQjHZWeJc3nEqyx4bE6_epdHzeXGLCGCI</string>
+</resources>
